@@ -1,6 +1,7 @@
 import 'package:flucodes/assets/res/res.dart';
-import 'package:flucodes/feature/my_codes/domain/modal/code_infos.dart';
 import 'package:flutter/material.dart';
+
+import '../../../domain/model/code_infos.dart';
 
 class CodeItem extends StatelessWidget {
   final CodeInfos code;

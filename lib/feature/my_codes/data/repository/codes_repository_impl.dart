@@ -1,7 +1,7 @@
 import 'package:flucodes/feature/my_codes/data/mapper/code_mapper.dart';
 import 'package:flucodes/feature/my_codes/data/source/remote/codes_remote_ds.dart';
-import 'package:flucodes/feature/my_codes/domain/modal/code_infos.dart';
 
+import '../../domain/model/code_infos.dart';
 import '../../domain/repository/codes_repository.dart';
 
 class CodesRepositoryImpl implements CodesRepository {
