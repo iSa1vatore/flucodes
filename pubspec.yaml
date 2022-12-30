@@ -1,0 +1,62 @@
+name: flucodes
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0-68.0.dev <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+
+  # UI
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^1.1.6
+  shimmer: ^2.0.0
+
+  # DI
+  provider:
+
+  # State
+  flutter_bloc: ^8.1.1
+
+  # Utils
+  freezed_annotation: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  dart_code_metrics: ^4.19.0
+  build_runner: ^2.2.1
+  flutter_gen_runner:
+  freezed: ^2.1.0+1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+
+flutter_gen:
+  output: lib/assets/res/
+  style: camel-case
+  integrations:
+    flutter_svg: true
+
+flutter_intl:
+  enabled: true
+  class_name: Localization
+  main_locale: en
+  arb_dir: lib/assets/localization
+  output_dir: lib/assets/localization/generated
+  use_deferred_loading: false
